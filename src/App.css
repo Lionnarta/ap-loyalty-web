@@ -79,3 +79,7 @@
 .ap-text-white {
   color: white;
 }
+
+.ap-pointer {
+  cursor: pointer;
+}

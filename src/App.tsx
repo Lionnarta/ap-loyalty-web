@@ -1,13 +1,22 @@
 import React, { useState, useEffect } from 'react';
-import logo from './logo.svg';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link
+} from "react-router-dom";
 import './App.css';
-import NavigationBar from './components/NavigationBar/NavigationBar';
+import Refferal from './pages/Refferal/Refferal';
 
 function App() {
   return (
-    <div className="App">
-      <NavigationBar />
-    </div>
+    <Router>
+      <Routes>
+        <Route path='/' element={< Refferal />}>
+          <Route path="blogs" element={<Refferal />} />
+        </Route>
+      </Routes>
+    </Router>
   );
 }
 

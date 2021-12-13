@@ -57,3 +57,21 @@
     font-weight: normal;
     background-color: var(--dark-blue);
 }
+
+#ap-nav-mobile {
+    display: none;
+}
+
+.ap-fill-darkgrey {
+    fill: #888F95;
+}
+
+@media screen and (max-width: 1124px) {
+    #ap-nav-desktop {
+        display: none;
+    }
+
+    #ap-nav-mobile {
+        display: block;
+    }
+}

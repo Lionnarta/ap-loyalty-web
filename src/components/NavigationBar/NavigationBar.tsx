@@ -10,16 +10,20 @@ const NavigationBar = () => {
 
     const [searchState, setSearchState] = useState(false);
 
+    const toggle = () => {
+        setSearchState(!searchState);
+    }
+
     return (
         <section className='ap-navigation ap-py-15 ap-w-full ap-z-1000 ap-text-darkgrey'>
             <div className='ap-navigation-container'>
 
                 <div className='ap-flex ap-align-center'>
-                    <img src={ burgerIcon } alt="Icon Burger" className='ap-icon ap-mr-40' />
-                    <img src={ logo } alt="Logo AkuPintar" className='ap-logo' />
+                    <img src={ burgerIcon } alt="Icon Burger" className='ap-icon ap-mr-40 ap-pointer' />
+                    <img src={ logo } alt="Logo AkuPintar" className='ap-logo ap-pointer' />
                 </div>
 
-                <div className='ap-flex ap-font-16 ap-content-600'>
+                <div id='ap-nav-desktop' className='ap-flex ap-font-16 ap-content-600'>
                     <div className='ap-nav-item'>
                         <a href="" className='ap-text-darkgrey'>BERANDA</a>
                     </div>
@@ -41,10 +45,12 @@ const NavigationBar = () => {
                 </div>
 
                 <div className='ap-flex ap-align-center'>
-                    <img src={ searchIcon } alt="Pencarian" className='ap-icon ap-mx-8' />
-                    <img src={ notifIcon } alt="Notifikasi" className='ap-icon ap-mx-8' />
-                    <img src={ astroIcon } alt="Notifikasi" className='ap-icon-v2 ap-mx-12' />
+                    <img src={ searchIcon } alt="Pencarian" className='ap-icon ap-mx-8 ap-pointer' />
+                    <img src={ notifIcon } alt="Notifikasi" className='ap-icon ap-mx-8 ap-pointer' />
+                    <img src={ astroIcon } alt="Notifikasi" className='ap-icon-v2 ap-mx-12 ap-pointer' />
+                    <svg id='ap-nav-mobile' className='ap-fill-darkgrey ap-pointer' width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M24 18v1h-24v-1h24zm0-6v1h-24v-1h24zm0-6v1h-24v-1h24z" fill="#1040e2"/><path d="M24 19h-24v-1h24v1zm0-6h-24v-1h24v1zm0-6h-24v-1h24v1z"/></svg>
                 </div>
+
             </div>
         </section>
     )

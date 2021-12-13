@@ -1,0 +1,59 @@
+.ap-navigation {
+    padding-left: 5% !important;
+    padding-right: 5% !important;
+    height: 80px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.32);
+}
+
+.ap-navigation-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ap-icon {
+    height: 20px;
+}
+
+.ap-icon-v2 {
+    height: 40px;
+}
+
+.ap-logo {
+    width: auto;
+    height: 30px;
+}
+
+.ap-nav-item {
+    padding: 18px 16px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-bottom: 3px solid white;
+}
+
+.ap-nav-item:hover {
+    border-bottom: 3px solid var(--dark-grey);
+}
+
+.ap-nav-item a {
+    text-decoration: none;
+}
+
+.ap-nav-item-last {
+    padding: 18px 16px;
+    display: flex;
+    align-items: center;
+}
+
+.ap-nav-item-last a {
+    text-decoration: none;
+}
+
+.ap-follow {
+    padding: 5px 20px;
+    border-radius: 6px;
+    font-weight: normal;
+    background-color: var(--dark-blue);
+}

@@ -1,5 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --dark-grey: #424a4c;
+  --dark-blue: #0070ba;
+  --orange: #f1a300;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.ap-flex {
+  display: flex;
+}
+
+.ap-inline-block {
+  display: inline-block;
+}
+
+.ap-w-full {
+  width: 100%;
+}
+
+.ap-mx-8 {
+  margin-right: 8px;
+  margin-left: 8px;
+}
+
+.ap-mx-12 {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.ap-mr-40 {
+  margin-right: 40px;
+}
+
+.ap-py-15 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.ap-z-1000 {
+  z-index: 1000 !important;
+}
+
+.ap-align-center {
+  align-items: center;
+}
+
+.ap-font-14 {
+  font-size: 14px;
+}
+
+.ap-font-16 {
+  font-size: 16px;
+}
+
+.ap-content-600 {
+  font-family: Poppins;
+  font-weight: 600;
+}
+
+.ap-text-darkgrey {
+  color: var(--dark-grey);
+}
+
+.ap-text-darkblue {
+  color: var(--dark-blue);
+}
+
+.ap-text-orange {
+  color: var(--orange);
+}
+
+.ap-text-white {
+  color: white;
 }

@@ -6,14 +6,14 @@ import {
   Link
 } from "react-router-dom";
 import './App.css';
-import Refferal from './pages/Refferal/Refferal';
+import Referral from './pages/Refferal/Referral';
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path='/' element={< Refferal />}>
-          <Route path="blogs" element={<Refferal />} />
+        <Route path='/' element={< Referral />}>
+          <Route path="blogs" element={<Referral />} />
         </Route>
       </Routes>
     </Router>

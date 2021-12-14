@@ -7,7 +7,11 @@ import searchIcon from '../../assets/images/search.png';
 import notifIcon from '../../assets/images/notif.png';
 import astroIcon from '../../assets/images/astroIcon.png';
 
-const NavigationBar = () => {
+interface SideProp {
+    toggleSide: () => void
+};
+
+const NavigationBar: React.FC<SideProp> = (props) => {
 
     const [searchState, setSearchState] = useState(false);
 
@@ -20,7 +24,7 @@ const NavigationBar = () => {
             <div className='ap-navigation-container'>
 
                 <div className='ap-flex ap-align-center'>
-                    <img src={ burgerIcon } alt="Icon Burger" className='ap-icon ap-mr-40 ap-pointer' />
+                    <img src={ burgerIcon } alt="Icon Burger" className='ap-icon ap-mr-40 ap-pointer' onClick={ props.toggleSide } />
                     <img src={ logo } alt="Logo AkuPintar" className='ap-logo ap-pointer' />
                 </div>
 

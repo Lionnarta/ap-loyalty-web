@@ -1,0 +1,45 @@
+.ap-sidebar {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    width: 280px;
+    background-color: white;
+    border-right: 0.5px solid #d7dadd;
+}
+
+.ap-s-profil {
+    padding-left: 11%;
+}
+
+.ap-s-link {
+    width: 90%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 11%;
+    color: var(--dark-grey);
+    text-decoration: none;
+}
+
+.ap-s-link:hover {
+    background-color: #d1d0d0;
+    border-top-right-radius: 26.5px;
+    border-bottom-right-radius: 26.5px;
+}
+
+.ap-s-active {
+    font-weight: 600;
+    background-color: #e7e7e7;
+    border-top-right-radius: 26.5px;
+    border-bottom-right-radius: 26.5px;
+}
+
+.ap-s-link-border {
+    width: 90%;
+    border-bottom: 0.5px solid #d7dadd;
+}
+
+.ap-s-new {
+    background-color: var(--red);
+    margin-left: 20px;
+    padding: 3px 8px;
+    border-radius: 5px;
+}

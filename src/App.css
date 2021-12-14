@@ -12,6 +12,10 @@
   box-sizing: border-box;
 }
 
+.ap-banner {
+  padding: 3% 5%;
+}
+
 .ap-flex {
   display: flex;
 }
@@ -24,6 +28,14 @@
   width: 100%;
 }
 
+.ap-mb-5 {
+  margin-bottom: 5px;
+}
+
+.ap-mb-16 {
+  margin-bottom: 16px;
+}
+
 .ap-mx-8 {
   margin-right: 8px;
   margin-left: 8px;
@@ -34,8 +46,16 @@
   margin-left: 20px;
 }
 
+.ap-mr-10 {
+  margin-right: 10px;
+}
+
 .ap-mr-40 {
   margin-right: 40px;
+}
+
+.ap-pr-10 {
+  padding-right: 10px;
 }
 
 .ap-py-15 {
@@ -51,12 +71,35 @@
   align-items: center;
 }
 
+.ap-font-12 {
+  font-size: 12px;
+}
+
 .ap-font-14 {
   font-size: 14px;
 }
 
 .ap-font-16 {
   font-size: 16px;
+}
+
+.ap-letter-43 {
+  letter-spacing: 0.43px;
+}
+
+.ap-content-300 {
+  font-family: Poppins;
+  font-weight: 300;
+}
+
+.ap-content-400 {
+  font-family: Poppins;
+  font-weight: 400;
+}
+
+.ap-content-500 {
+  font-family: Poppins;
+  font-weight: 500;
 }
 
 .ap-content-600 {
@@ -80,6 +123,26 @@
   color: white;
 }
 
+.ap-icon {
+  height: 20px;
+}
+
+.ap-icon-v2 {
+  height: 40px;
+}
+
+.ap-icon-v3 {
+  width: 25px;
+}
+
+.ap-underline {
+  text-decoration: underline;
+}
+
 .ap-pointer {
   cursor: pointer;
+}
+
+.ap-justify {
+  text-align: justify;
 }

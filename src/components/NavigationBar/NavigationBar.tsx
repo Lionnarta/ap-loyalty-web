@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './NavigationBar.css';
+import NavigationBarMobile from './NavigationBarMobile';
 import logo from '../../assets/images/apLogo.png';
 import burgerIcon from '../../assets/images/burgerIcon.png';
 import searchIcon from '../../assets/images/search.png';
@@ -48,10 +49,14 @@ const NavigationBar = () => {
                     <img src={ searchIcon } alt="Pencarian" className='ap-icon ap-mx-8 ap-pointer' />
                     <img src={ notifIcon } alt="Notifikasi" className='ap-icon ap-mx-8 ap-pointer' />
                     <img src={ astroIcon } alt="Notifikasi" className='ap-icon-v2 ap-mx-12 ap-pointer' />
-                    <svg id='ap-nav-mobile' className='ap-fill-darkgrey ap-pointer' width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M24 18v1h-24v-1h24zm0-6v1h-24v-1h24zm0-6v1h-24v-1h24z" fill="#1040e2"/><path d="M24 19h-24v-1h24v1zm0-6h-24v-1h24v1zm0-6h-24v-1h24v1z"/></svg>
+                    <svg id='ap-nav-mobile' className='ap-fill-darkgrey ap-pointer' onClick={ toggle } width="24" height="24" xmlns="http://www.w3.org/2000/svg" fillRule="evenodd" clipRule="evenodd"><path d="M24 18v1h-24v-1h24zm0-6v1h-24v-1h24zm0-6v1h-24v-1h24z" fill="#1040e2"/><path d="M24 19h-24v-1h24v1zm0-6h-24v-1h24v1zm0-6h-24v-1h24v1z"/></svg>
                 </div>
 
             </div>
+
+            {
+                searchState?<NavigationBarMobile />:null
+            }
         </section>
     )
 };

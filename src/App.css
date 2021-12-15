@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
   --red: #EA4335;
@@ -20,6 +20,11 @@
 
 .ap-flex {
   display: flex;
+}
+
+.ap-flex-col {
+  display: flex;
+  flex-direction: column;
 }
 
 .ap-block {
@@ -44,6 +49,10 @@
 
 .ap-mb-16 {
   margin-bottom: 16px;
+}
+
+.ap-mb-20 {
+  margin-bottom: 20px;
 }
 
 .ap-mb-40 {
@@ -85,6 +94,10 @@
   align-items: center;
 }
 
+.ap-justify-center {
+  justify-content: center;
+}
+
 .ap-font-12 {
   font-size: 12px;
 }
@@ -103,6 +116,10 @@
 
 .ap-font-20 {
   font-size: 20px;
+}
+
+.ap-font-25 {
+  font-size: 25px;
 }
 
 .ap-letter-43 {
@@ -124,6 +141,11 @@
   font-weight: 500;
 }
 
+.ap-content-500-v2 {
+  font-family: Roboto;
+  font-weight: 500;
+}
+
 .ap-content-600 {
   font-family: Poppins;
   font-weight: 600;
@@ -131,6 +153,11 @@
 
 .ap-content-700 {
   font-family: Poppins;
+  font-weight: 700;
+}
+
+.ap-content-700-v2 {
+  font-family: Roboto;
   font-weight: 700;
 }
 
@@ -180,4 +207,8 @@
 
 .ap-justify {
   text-align: justify;
+}
+
+.ap-center {
+  text-align: center;
 }

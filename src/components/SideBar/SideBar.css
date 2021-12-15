@@ -1,7 +1,7 @@
 .ap-sidebar {
     padding-top: 3%;
     padding-bottom: 3%;
-    width: 280px;
+    min-width: 280px;
     background-color: white;
     border-right: 0.5px solid #d7dadd;
 }

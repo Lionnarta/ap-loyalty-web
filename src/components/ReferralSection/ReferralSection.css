@@ -1,0 +1,84 @@
+.ap-referral {
+    padding: 3% 4%;
+    width: 100%;
+}
+
+.ap-referral-container {
+    padding: 3% 5%;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, #065b94, var(--dark-blue));
+}
+
+.ap-referral-ls {
+    width: 40%;
+    padding-right: 15px;
+}
+
+.ap-referral-rs {
+    width: 60%;
+    padding-left: 15px;
+}
+
+.ap-referral-box {
+    width: 85%;
+    padding: 5%;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.ap-referral-code {
+    width: 100%;
+    height: 45px;
+    padding: 0 20px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    border: 0;
+}
+
+.ap-referral-code:focus {
+    outline-color: #919191;
+}
+
+.ap-referral-share {
+    height: 45px;
+    border-radius: 5px;
+    background-color: var(--dark-blue);
+    cursor: pointer;
+}
+
+.ap-referral-share:hover {
+    background-color: #035b96;
+}
+
+.ap-referral-tutorial {
+    color: #0170BA;
+    text-align: center;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.ap-referral-friend {
+    padding: 15px 20px;
+    border-radius: 5px;
+    background-color: #FAB600;
+}
+
+.ap-referral-fl {
+    width: 60%;
+}
+
+.ap-referral-fr {
+    width: 30%;
+}
+
+.ap-teman {
+    position: relative;
+}
+
+.ap-teman:nth-child(2) {
+    left: -10px;
+}
+
+.ap-teman:nth-child(3) {
+    left: -20px;
+}

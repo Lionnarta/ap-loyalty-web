@@ -4,6 +4,9 @@ export default {
     public: { url: '/', static: true },
     src: { url: '/dist' },
   },
+  headers: {
+    "Access-Control-Allow-Origin": "http://localhost:8080"
+  },
   plugins: [
     '@snowpack/plugin-react-refresh',
     '@snowpack/plugin-dotenv',

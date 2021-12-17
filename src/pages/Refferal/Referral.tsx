@@ -40,7 +40,7 @@ const Referral = () => {
                 {
                     (sideState && width > 768)?<SideBar />:null
                 }
-                <ReferralSection />
+                <ReferralSection sideState={ sideState } />
             </div>
             <Footer />
         </div>

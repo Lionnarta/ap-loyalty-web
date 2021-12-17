@@ -4,9 +4,12 @@
 }
 
 .ap-referral-container {
-    padding: 3% 5%;
+    padding: 3% 5% 4%;
     border-radius: 20px;
-    background-image: linear-gradient(to right, #065b94, var(--dark-blue));
+    background-image: url(./dist/assets/images/wave.png), url(./dist/assets/images/medOval.png), url(./dist/assets/images/smallOval.png), linear-gradient(to right, #065b94, var(--dark-blue));
+    background-repeat: no-repeat;
+    background-size: 430px, auto, auto, cover;
+    background-position: left bottom, 4% 15%, 40% 45%;
 }
 
 .ap-referral-ls {
@@ -17,11 +20,12 @@
 .ap-referral-rs {
     width: 60%;
     padding-left: 15px;
+    align-self: center;
 }
 
 .ap-referral-box {
-    width: 85%;
-    padding: 5%;
+    width: 90%;
+    padding: 5% 8%;
     border-radius: 15px;
     background-color: white;
 }
@@ -29,30 +33,39 @@
 .ap-referral-code {
     width: 100%;
     height: 45px;
-    padding: 0 20px;
+    padding: 0 95px 0 20px;
     border-radius: 5px;
     background-color: #f9f9f9;
     border: 0;
+    border: 1px solid #f9f9f9;
+    transition: border 200ms ease;
 }
 
 .ap-referral-code:focus {
-    outline-color: #919191;
+    outline: none;
+    border: 1px solid var(--dark-blue);
 }
 
-.ap-referral-share {
+.ap-referral-copy {
+    padding-left: 5px;
+    margin-left: -95px;
+    cursor: pointer;
+}
+
+.ap-referral-blue {
     height: 45px;
     border-radius: 5px;
     background-color: var(--dark-blue);
     cursor: pointer;
 }
 
-.ap-referral-share:hover {
+.ap-referral-blue:hover {
     background-color: #035b96;
 }
 
 .ap-referral-tutorial {
+    display: inline-block;
     color: #0170BA;
-    text-align: center;
     text-decoration: underline;
     cursor: pointer;
 }
@@ -61,24 +74,43 @@
     padding: 15px 20px;
     border-radius: 5px;
     background-color: #FAB600;
+    justify-content: space-between;
+    cursor: pointer;
 }
 
-.ap-referral-fl {
-    width: 60%;
-}
-
-.ap-referral-fr {
-    width: 30%;
+.ap-referral-friend:hover {
+    background-color: #cc9603;
 }
 
 .ap-teman {
-    position: relative;
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 20px;
 }
 
-.ap-teman:nth-child(2) {
-    left: -10px;
+.ap-referral-item {
+    margin-bottom: 10px;
+    padding: 12px 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 0 1px rgb(0 0 0 / 20%);
 }
 
-.ap-teman:nth-child(3) {
-    left: -20px;
+.ap-referral-scroll-box {
+    padding: 1px;
+    padding-right: 3px;
+    height: 220px;
+    overflow-y: scroll;
+}
+
+.ap-referral-scroll-box::-webkit-scrollbar {
+    width: 4px;
+}
+
+.ap-referral-scroll-box::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background-color: #979797;
+}
+
+.ap-referral-scroll-box::-webkit-scrollbar-thumb:hover {
+    background-color: #868686;
 }

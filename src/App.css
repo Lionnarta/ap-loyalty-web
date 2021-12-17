@@ -3,9 +3,11 @@
 :root {
   --red: #EA4335;
   --dark-grey: #424a4c;
+  --light-blue: #4ABDF7;
   --dark-blue: #0070ba;
   --orange: #f1a300;
   --silver-grey: #888f95;
+  --silver-grey-2: #969CA2;
 }
 
 * {
@@ -39,6 +41,10 @@
   width: 100%;
 }
 
+.ap-mb-0 {
+  margin-bottom: 0;
+}
+
 .ap-mb-5 {
   margin-bottom: 5px;
 }
@@ -53,6 +59,10 @@
 
 .ap-mb-20 {
   margin-bottom: 20px;
+}
+
+.ap-mb-30 {
+  margin-bottom: 30px;
 }
 
 .ap-mb-40 {
@@ -71,6 +81,10 @@
 
 .ap-mr-10 {
   margin-right: 10px;
+}
+
+.ap-mr-20 {
+  margin-right: 20px;
 }
 
 .ap-mr-40 {
@@ -92,6 +106,10 @@
 
 .ap-align-center {
   align-items: center;
+}
+
+.ap-self-center {
+  align-self: center;
 }
 
 .ap-justify-center {
@@ -165,6 +183,10 @@
   color: var(--dark-grey);
 }
 
+.ap-text-lightblue {
+  color: var(--light-blue);
+}
+
 .ap-text-darkblue {
   color: var(--dark-blue);
 }
@@ -177,8 +199,16 @@
   color: white;
 }
 
+.ap-text-black {
+  color: black;
+}
+
 .ap-text-silvergrey {
   color: var(--silver-grey);
+}
+
+.ap-text-silvergrey-v2 {
+  color: var(--silver-grey-2);
 }
 
 .ap-icon {
@@ -197,6 +227,14 @@
   width: 80px;  
 }
 
+.ap-icon-v5 {
+  width: 15px;
+}
+
+.ap-icon-v6 {
+  width: 30px;
+}
+
 .ap-underline {
   text-decoration: underline;
 }
@@ -211,4 +249,12 @@
 
 .ap-center {
   text-align: center;
+}
+
+.ap-space {
+  justify-content: space-between;
+}
+
+.ap-hidden {
+  overflow: hidden;
 }

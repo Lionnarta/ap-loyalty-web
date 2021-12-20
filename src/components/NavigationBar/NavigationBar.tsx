@@ -20,7 +20,7 @@ const NavigationBar: React.FC<SideProp> = (props) => {
     }
 
     return (
-        <section className='ap-navigation ap-py-15 ap-w-full ap-z-1000 ap-text-darkgrey'>
+        <section className='ap-navigation ap-py-15 ap-w-full ap-text-darkgrey'>
             <div className='ap-navigation-container'>
 
                 <div className='ap-flex ap-align-center'>

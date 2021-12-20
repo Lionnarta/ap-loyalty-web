@@ -132,12 +132,24 @@
   font-size: 18px;
 }
 
+.ap-font-19 {
+  font-size: 19px;
+}
+
 .ap-font-20 {
   font-size: 20px;
 }
 
+.ap-font-22 {
+  font-size: 22px;
+}
+
 .ap-font-25 {
   font-size: 25px;
+}
+
+.ap-font-30 {
+  font-size: 30px;
 }
 
 .ap-letter-43 {
@@ -151,6 +163,11 @@
 
 .ap-content-400 {
   font-family: Poppins;
+  font-weight: 400;
+}
+
+.ap-content-400-v2 {
+  font-family: Roboto;
   font-weight: 400;
 }
 
@@ -249,6 +266,10 @@
 
 .ap-center {
   text-align: center;
+}
+
+.ap-right {
+  text-align: right;
 }
 
 .ap-space {

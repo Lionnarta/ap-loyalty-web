@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import backArrow from '../../assets/images/backArrow.png'
 import user from '../../assets/images/user.png'
 import xpIcon from '../../assets/images/xp.png'
@@ -8,10 +8,12 @@ import teman2 from '../../assets/images/teman2.png'
 import teman3 from '../../assets/images/teman3.png'
 
 interface BoxFriendsProps {
-    setDetailValue: (val: boolean) => void
+    setDetailValue: (val: boolean) => void,
+    setShowShare: React.Dispatch<React.SetStateAction<boolean>>,
 }
 
 const BoxFriends: React.FC<BoxFriendsProps> = (props) => {
+
     return (
         <div className='ap-referral-box ap-mb-30'>
             <div className='ap-flex ap-mb-30'>
@@ -88,7 +90,7 @@ const BoxFriends: React.FC<BoxFriendsProps> = (props) => {
             </div>
             <div className='ap-referral-blue ap-flex ap-justify-center ap-align-center'>
                 <img src={ user } alt="Invite Teman" className='ap-mr-10 ap-icon-v3' />
-                <p className='ap-content-500-v2 ap-font-14'>Ajak Teman Lebih Banyak</p>
+                <p className='ap-content-500-v2 ap-font-14' onClick={ () => props.setShowShare(true) }>Ajak Teman Lebih Banyak</p>
             </div>
         </div>
     )

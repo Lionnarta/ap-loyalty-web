@@ -59,8 +59,8 @@ const TutorialModal:React.FC<TutorialProps> = (props) => {
                                         <div className='ap-flex ap-space ap-align-center'>
                                             <img src={ astrid } alt="Astrid" className='ap-carousel-astrid' />
                                             <div>
-                                                <p className='ap-font-25 ap-content-700 ap-right ap-text-white ap-mb-10'>Lebih Seru Belajar Bersama Teman-Temanmu di AkuPintar</p>
-                                                <p className='ap-content-400-v2 ap-font-16 ap-right ap-text-white'>Ajak Temanmu Gabung Dengan Kode Referralmu!</p>
+                                                <p className='ap-carousel-header ap-font-25 ap-content-700 ap-right ap-text-white ap-mb-10'>Lebih Seru Belajar Bersama Teman-Temanmu di AkuPintar</p>
+                                                <p className='ap-carousel-header ap-content-400-v2 ap-font-16 ap-right ap-text-white ap-mb-10'>Ajak Temanmu Gabung Dengan Kode Referralmu!</p>
                                             </div>
                                         </div>
                                         <div className='ap-carousel-c'>

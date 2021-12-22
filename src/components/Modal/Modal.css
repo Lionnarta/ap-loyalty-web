@@ -127,7 +127,7 @@
 }
 
 .ap-carousel-astrid {
-    width: 25%;   
+    width: 25%;
 }
 
 .ap-carousel-c {
@@ -239,5 +239,21 @@
 
     .ap-modal-container-v3 {
         width: 90%;
+    }
+}
+
+@media screen and (max-width: 624px) {
+    .ap-carousel-astrid {
+        display: none;
+    }
+
+    .ap-carousel-header {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 452px) {
+    .ap-modal-container-v2 {
+        min-width: 400px;
     }
 }

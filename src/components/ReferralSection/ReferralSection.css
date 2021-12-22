@@ -23,6 +23,11 @@
     align-self: center;
 }
 
+.ap-referral-responsive {
+    width: 100%;
+    padding: 0 15px;
+}
+
 .ap-referral-box {
     width: 90%;
     padding: 5% 8%;
@@ -35,14 +40,9 @@
     height: 45px;
     padding: 0 95px 0 20px;
     border-radius: 5px;
+    display: flex;
+    align-items: center;
     background-color: #f9f9f9;
-    border: 0;
-    border: 1px solid #f9f9f9;
-    transition: border 200ms ease;
-}
-
-.ap-referral-code:focus {
-    outline: none;
     border: 1px solid var(--dark-blue);
 }
 
@@ -113,4 +113,30 @@
 
 .ap-referral-scroll-box::-webkit-scrollbar-thumb:hover {
     background-color: #868686;
+}
+
+@media screen and (max-width: 768px) {
+    .ap-referral-container {
+        flex-direction: column;
+    }
+
+    .ap-referral-ls, .ap-referral-rs {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .ap-referral-ls {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .ap-referral-astro {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .ap-referral-box {
+        width: 100%;
+    }
 }

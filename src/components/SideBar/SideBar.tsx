@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { Navigate } from 'react-router-dom';
 import './SideBar.css';
 import astroIcon from '../../assets/images/astroIcon2.png';
 
 const SideBar = () => {
+
     return (
         <section className='ap-sidebar ap-text-darkgrey ap-content-400 ap-font-16'>
             <div className='ap-s-profil ap-mb-40'>
@@ -11,7 +13,15 @@ const SideBar = () => {
                 <p className='ap-font-12 ap-text-silvergrey'>SMAN Aku Pintar Jakarta</p>
             </div>
             <div>
-                <a href="" className='ap-block ap-s-link ap-s-active'>
+                <a href="" className='ap-block ap-s-link'>
+                    AP Loyalty
+                    <span className='ap-font-12 ap-text-white ap-content-400 ap-s-new'>Baru</span>
+                </a>
+                <a href="/cp" className={ window.location.pathname=='/cp' ? 'ap-block ap-s-link ap-s-active' : 'ap-block ap-s-link' }>
+                    AP Coin & AP Poin
+                    <span className='ap-font-12 ap-text-white ap-content-400 ap-s-new'>Baru</span>
+                </a>
+                <a href="/" className={ window.location.pathname=='/' ? 'ap-block ap-s-link ap-s-active' : 'ap-block ap-s-link' }>
                     Ajak Teman
                     <span className='ap-font-12 ap-text-white ap-content-400 ap-s-new'>Baru</span>
                 </a>

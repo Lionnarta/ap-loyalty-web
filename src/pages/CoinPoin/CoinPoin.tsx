@@ -1,18 +1,15 @@
-import React, { useState, useEffect } from 'react';
-import './Referral.css';
+import React from 'react'
 import Footer from '../../components/Footer/Footer';
 import NavigationBar from '../../components/NavigationBar/NavigationBar';
 import SideBar from '../../components/SideBar/SideBar';
-import ReferralSection from '../../components/ReferralSection/ReferralSection';
 
-interface ReferralProps {
+interface CoinPoinProps {
     sideState: boolean,
     width: number,
     toggleSide: () => void
 }
 
-const Referral:React.FC<ReferralProps> = (props) => {
-
+const CoinPoin:React.FC<CoinPoinProps> = (props) => {
     return (
         <div>
             <NavigationBar toggleSide={ props.toggleSide } />
@@ -21,11 +18,10 @@ const Referral:React.FC<ReferralProps> = (props) => {
                 {
                     (props.sideState)?<SideBar />:null
                 }
-                <ReferralSection sideState={ props.sideState } width = { props.width } />
             </div>
             <Footer />
         </div>
     )
 }
 
-export default Referral;
+export default CoinPoin

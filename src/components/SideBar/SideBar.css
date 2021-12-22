@@ -43,3 +43,24 @@
     padding: 3px 8px;
     border-radius: 5px;
 }
+
+@media screen and (max-width: 768px) {
+    .ap-sidebar {
+        position: fixed;
+        height: calc(100vh - 80px);
+        overflow-y: scroll;
+    }
+
+    .ap-sidebar::-webkit-scrollbar {
+        width: 5px;
+    }
+    
+    .ap-sidebar::-webkit-scrollbar-thumb {
+        border-radius: 2px;
+        background-color: #979797;
+    }
+    
+    .ap-sidebar::-webkit-scrollbar-thumb:hover {
+        background-color: #868686;
+    }
+}

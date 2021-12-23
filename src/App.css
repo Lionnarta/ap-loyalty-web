@@ -79,6 +79,10 @@
   margin-left: 20px;
 }
 
+.ap-mr-5 {
+  margin-right: 5px;
+}
+
 .ap-mr-10 {
   margin-right: 10px;
 }
@@ -89,6 +93,18 @@
 
 .ap-mr-40 {
   margin-right: 40px;
+}
+
+.ap-ml-20 {
+  margin-left: 20px;
+}
+
+.ap-ml-30 {
+  margin-left: 30px;
+}
+
+.ap-ml-40 {
+  margin-left: 40px;
 }
 
 .ap-pr-10 {
@@ -114,6 +130,10 @@
 
 .ap-justify-center {
   justify-content: center;
+}
+
+.ap-font-10 {
+  font-size: 10px;
 }
 
 .ap-font-12 {

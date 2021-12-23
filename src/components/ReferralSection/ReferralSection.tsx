@@ -5,7 +5,6 @@ import BoxReferral from './BoxReferral'
 import BoxFriends from './BoxFriends'
 import TermModal from '../Modal/TermModal'
 import astroYes from '../../assets/images/astroYes.png'
-import { use } from 'chai'
 
 interface ReferralProp {
     sideState: boolean,

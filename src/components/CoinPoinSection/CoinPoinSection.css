@@ -1,0 +1,129 @@
+.ap-cp {
+    padding: 3% 4% 2%;
+    width: 100%;
+}
+
+.ap-cp-v2 {
+    padding: 2% 4% 3% 3.5%;
+    width: 100%;
+}
+
+.ap-cp-header {
+    padding: 3% 2%;
+    border-radius: 6px;
+    background-image: linear-gradient(to right, #065b94, var(--dark-blue));
+}
+
+.ap-cp-download {
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    padding: 12px 20px;
+    align-self: center;
+    border: 1px solid white;
+    color: var(--dark-blue);
+    background-color: white;
+    cursor: pointer;
+    transition: all 200ms ease;
+}
+
+.ap-cp-download:hover {
+    background-color: var(--dark-blue);
+    color: white;
+}
+
+.ap-cp-download-icon {
+    fill: var(--dark-blue);
+}
+
+.ap-cp-download:hover p .ap-cp-download-icon {
+    fill: white !important;
+}
+
+.ap-cp-info {
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.05);
+}
+
+.ap-cp-info-ls {
+    width: 30%;
+}
+
+.ap-cp-info-rs {
+    width: 70%;
+}
+
+.ap-cp-info-nav-c {
+    position: relative;
+    display: flex;
+    cursor: pointer;
+}
+
+.ap-cp-info-nav {
+    width: 18px;
+    height: 100%;
+    background-color: #E0E0E0;
+}
+
+.ap-cp-info-nav-c:hover .ap-cp-info-content {
+    background-color: #eeeeee;
+}
+
+.ap-cp-info-nav-top {
+    border-top-left-radius: 20px;
+}
+
+.ap-cp-info-nav-bottom {
+    border-bottom-left-radius: 20px;
+}
+
+.ap-cp-info-active {
+    background-color: var(--dark-blue);
+}
+
+.ap-cp-info-content {
+    padding: 55px 10% 55px 15%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #F4F5F6;
+}
+
+.ap-cp-info-active ~ .ap-cp-info-content {
+    background-color: white;
+}
+
+.ap-coin-text {
+    margin-left: 20px;
+    color: #FFB100;
+}
+
+.ap-poin-text {
+    color: var(--dark-blue);
+}
+
+.ap-poin-text-v2 {
+    color: #979797;
+}
+
+.ap-coin-topup {
+    position: absolute;
+    display: flex;
+    bottom: 10%;
+    right: 7%;
+    padding: 3px 10px;
+    border-radius: 5px;
+    border: 1px solid var(--dark-blue);
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 768px) {
+    .ap-cp-header {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}

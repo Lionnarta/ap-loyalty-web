@@ -3,6 +3,7 @@
     height: 100%;
     background: rgba(0, 0, 0, 0.8);
     position: fixed;
+    z-index: 20;
     top: 0;
     left: 0;
 }
@@ -56,6 +57,23 @@
     transition: all 200ms ease;
 }
 
+.ap-modal-container-v4 {
+    position: relative;
+    width: 50%;
+    max-height: 650px;
+    padding: 30px 40px;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%);
+    background: #fff;
+    background-image: url('/dist/assets/images/triangle1.png'), url('/dist/assets/images/triangle2.png');
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto 100%, 100% auto;
+    color: black;
+    z-index: 1000 !important;
+    position: relative;
+    border-radius: 20px;
+    transition: all 200ms ease;
+}
+
 .ap-close-modal {
     position: absolute;
     top: -10px;
@@ -87,6 +105,11 @@
 
 .ap-term-sub-ol {
     margin-left: 25px;
+}
+
+.ap-term-pos {
+    position: relative;
+    left: -15px;
 }
 
 .ap-modal-icon {
@@ -128,6 +151,10 @@
 
 .ap-carousel-astrid {
     width: 25%;
+}
+
+.ap-download-astrid {
+    width: 40%;
 }
 
 .ap-carousel-c {
@@ -222,6 +249,17 @@
     background-color: white;
 }
 
+.ap-download-app {
+    display: flex;
+    justify-content: end;
+}
+
+.ap-download-img {
+    width: 100%;
+    position: relative;
+    bottom: -30px;
+}
+
 @media screen and (max-width: 1024px) {
     .ap-modal-container-v1 {
         width: 80%;
@@ -229,6 +267,10 @@
 
     .ap-modal-container-v3 {
         width: 80%;
+    }
+
+    .ap-modal-container-v4 {
+        width: 70%;
     }
 }
 
@@ -240,10 +282,18 @@
     .ap-modal-container-v3 {
         width: 90%;
     }
+
+    .ap-modal-container-v4 {
+        width: 90%;
+    }
 }
 
 @media screen and (max-width: 624px) {
     .ap-carousel-astrid {
+        display: none;
+    }
+
+    .ap-download-astrid {
         display: none;
     }
 

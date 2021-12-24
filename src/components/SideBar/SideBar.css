@@ -47,6 +47,7 @@
 @media screen and (max-width: 768px) {
     .ap-sidebar {
         position: fixed;
+        z-index: 10;
         height: calc(100vh - 80px);
         overflow-y: scroll;
     }

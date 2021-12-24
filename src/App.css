@@ -6,6 +6,7 @@
   --light-blue: #4ABDF7;
   --dark-blue: #0070ba;
   --orange: #f1a300;
+  --orange-2: #FFB100;
   --silver-grey: #888f95;
   --silver-grey-2: #969CA2;
 }
@@ -69,6 +70,10 @@
   margin-bottom: 40px;
 }
 
+.ap-mt-20 {
+  margin-top: 20px;
+}
+
 .ap-mx-8 {
   margin-right: 8px;
   margin-left: 8px;
@@ -87,8 +92,20 @@
   margin-right: 10px;
 }
 
+.ap-mr-15 {
+  margin-right: 15px;
+}
+
 .ap-mr-20 {
   margin-right: 20px;
+}
+
+.ap-mr-30 {
+  margin-right: 30px;
+}
+
+.ap-mr-35 {
+  margin-right: 35px;
 }
 
 .ap-mr-40 {
@@ -128,6 +145,10 @@
   align-self: center;
 }
 
+.ap-self-end {
+  align-self: end;
+}
+
 .ap-justify-center {
   justify-content: center;
 }
@@ -138,6 +159,10 @@
 
 .ap-font-12 {
   font-size: 12px;
+}
+
+.ap-font-13 {
+  font-size: 13px;
 }
 
 .ap-font-14 {
@@ -230,6 +255,10 @@
 
 .ap-text-orange {
   color: var(--orange);
+}
+
+.ap-text-orange-v2 {
+  color: var(--orange-2);
 }
 
 .ap-text-white {

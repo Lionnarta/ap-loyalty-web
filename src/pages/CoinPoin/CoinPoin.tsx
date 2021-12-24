@@ -9,6 +9,7 @@ import CoinPoinPremiumAccess from '../../components/CoinPoinSection/CoinPoinPrem
 import CoinPoinPremiumContent from '../../components/CoinPoinSection/CoinPoinPremiumContent'
 import CoinPoinVoucher from '../../components/CoinPoinSection/CoinPoinVoucher'
 import DownloadModal from '../../components/Modal/DownloadModal'
+import voucher from '../../assets/images/voucher.png'
 
 interface CoinPoinProps {
     sideState: boolean,
@@ -19,9 +20,11 @@ interface CoinPoinProps {
 const CoinPoin:React.FC<CoinPoinProps> = (props) => {
 
     const [showDownload, setShowDownload] = useState(false);
+    const [showFocus, setShowFocus] = useState(false);
 
     return (
         <div>
+            <div className={ showFocus ? 'ap-cp-focus' : ''}></div>
             <NavigationBar toggleSide={ props.toggleSide } />
             <div style={{paddingTop: "80px"}}></div>
             <div className='ap-r-layout'>
@@ -35,6 +38,12 @@ const CoinPoin:React.FC<CoinPoinProps> = (props) => {
                     <CoinPoinPremiumContent sideState={ props.sideState } width = { props.width } />
                     <CoinPoinVoucher sideState={ props.sideState } width = { props.width } />
                 </div>
+            </div>
+            <div className='ap-cp-voucher'>
+                <div className='ap-cp-voucher-hov' onMouseEnter={ () => setShowFocus(true) } onMouseLeave={ () => setShowFocus(false) } >
+                    <a href=''><img src={ voucher } alt="Voucher" /></a>
+                </div>
+                <p className='ap-cp-voucher-text'>Reward Saya</p>
             </div>
             <DownloadModal showDownload={ showDownload } setShowDownload={ setShowDownload } />
             <Footer />

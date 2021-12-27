@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './PremiumContentSection.css'
 import '../CoinPoinSection/CoinPoinSection.css'
+import ExchangeModal1 from '../Modal/ExchangeModal1'
 import backArrow from '../../assets/images/backArrow2.png'
 import voucher from '../../assets/images/voucher1.png'
 import coin from '../../assets/images/coin.png'
@@ -12,6 +13,9 @@ interface PDProps {
 }
 
 const PremiumDetail:React.FC<PDProps> = (props) => {
+
+    const [showEM1, setShowEM1] = useState(false);
+
     return (
         <div className='ap-w-full'>
             <section className='ap-cp-v3 ap-text-darkgrey'>
@@ -51,7 +55,7 @@ const PremiumDetail:React.FC<PDProps> = (props) => {
                                 </div>
                             </div>
                         </div>
-                        <div className='ap-pcs-btn-v3'>
+                        <div className='ap-pcs-btn-v3' onClick={ () => setShowEM1(true) }>
                             <p>Tukar</p>
                         </div>
                     </div>
@@ -83,6 +87,7 @@ const PremiumDetail:React.FC<PDProps> = (props) => {
                     </ol>
                 </div>
             </section>
+            <ExchangeModal1 showEM1={ showEM1 } setShowEM1={ setShowEM1 } />
         </div>
     )
 }

@@ -74,6 +74,20 @@
     transition: all 200ms ease;
 }
 
+.ap-modal-container-v5 {
+    width: 35%;
+    min-width: 420px;
+    min-height: 500px;
+    padding: 35px 40px;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%);
+    background: white;
+    color: black;
+    z-index: 1000 !important;
+    position: relative;
+    border-radius: 20px;
+    transition: all 200ms ease;
+}
+
 .ap-close-modal {
     position: absolute;
     top: -10px;
@@ -260,6 +274,59 @@
     bottom: -30px;
 }
 
+.ap-em-icon {
+    height: 25px;
+}
+
+.ap-payment-method {
+    padding: 15px 20px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.ap-payment-method:hover {
+    box-shadow: 0px 0px 4px rgb(0, 112, 186);
+}
+
+.ap-radio {
+    padding: 5px;
+    border: 1px solid #0070BA;
+    border-radius: 50%;
+}
+
+.ap-radio-selected {
+    background-color: var(--dark-blue);
+}
+
+.ap-method-btn {
+    width: 100%;
+    padding: 12px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid var(--dark-blue);
+    color: white;
+    background-color: var(--dark-blue);
+    cursor: pointer;
+    transition: all 200ms ease;
+}
+
+.ap-method-btn:hover {
+    color: var(--dark-blue);
+    background-color: #fff;
+}
+
+.ap-method-btn-disable {
+    width: 100%;
+    padding: 12px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #969696;
+    color: #969696;
+    background-color: #F1F1F1;
+}
+
 @media screen and (max-width: 1024px) {
     .ap-modal-container-v1 {
         width: 80%;
@@ -305,5 +372,9 @@
 @media screen and (max-width: 452px) {
     .ap-modal-container-v2 {
         min-width: 400px;
+    }
+
+    .ap-modal-container-v5 {
+        min-width: 390px;
     }
 }

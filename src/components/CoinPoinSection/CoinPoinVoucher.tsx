@@ -16,7 +16,7 @@ const CoinPoinVoucher:React.FC<CPVProps> = (props) => {
             <section className='ap-cp-v3 ap-text-darkgrey'>
                 <div className='ap-flex ap-space ap-mb-20'>
                     <p className='ap-font-20 ap-content-700'>Voucher Pintar</p>
-                    <p className='ap-font-20 ap-content-500-v2 ap-text-darkblue ap-pointer'>Lihat Semua</p>
+                    <a href='/cp/vc' className='ap-font-20 ap-content-500-v2 ap-text-darkblue ap-pointer ap-none'>Lihat Semua</a>
                 </div>
                 <div className={ (props.width <= 1200 && props.width > 768) && props.sideState ? 'ap-cp-card-container ap-cp-card-container-wside' : 'ap-cp-card-container' }>
                     <a href='/cp/pa/d' className={ (props.width <= 1200 && props.width > 768) && props.sideState ? 'ap-cp-card ap-cp-card-wside' : 'ap-cp-card' }>

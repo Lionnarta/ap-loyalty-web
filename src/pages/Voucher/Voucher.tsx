@@ -3,6 +3,7 @@ import './Voucher.css'
 import Footer from '../../components/Footer/Footer'
 import NavigationBar from '../../components/NavigationBar/NavigationBar'
 import SideBar from '../../components/SideBar/SideBar'
+import VoucherSection from '../../components/PremiumContentSection/VoucherSection'
 
 interface VoucherProps {
     sideState: boolean,
@@ -20,7 +21,7 @@ const Voucher:React.FC<VoucherProps> = (props) => {
                     (props.sideState)?<SideBar />:null
                 }
                 <div className='ap-w-full'>
-                    {/* <PremiumAccessSection sideState={ props.sideState } width = { props.width } /> */}
+                    <VoucherSection sideState={ props.sideState } width = { props.width } />
                 </div>
             </div>
             <Footer />

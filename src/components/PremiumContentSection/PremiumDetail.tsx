@@ -51,7 +51,7 @@ const PremiumDetail:React.FC<PDProps> = (props) => {
                                 </div>
                             </div>
                         </div>
-                        <div className='ap-pcs-btn'>
+                        <div className='ap-pcs-btn-v3'>
                             <p>Tukar</p>
                         </div>
                     </div>

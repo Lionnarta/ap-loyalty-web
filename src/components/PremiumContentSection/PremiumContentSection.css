@@ -57,9 +57,9 @@
     width: auto;
 }
 
-.ap-pcs-btn {
+.ap-pcs-btn-v3 {
     max-width: 300px;
-    padding: 20px;
+    padding: 10px;
     font-family: Roboto;
     font-size: 18px;
     font-weight: 500;
@@ -68,9 +68,10 @@
     border-radius: 5px;
     color: white;
     background-color: var(--dark-blue);
+    cursor: pointer;
 }
 
-.ap-pcs-btn:hover {
+.ap-pcs-btn-v3:hover {
     color: var(--dark-blue);
     background-color: #fff;
 }

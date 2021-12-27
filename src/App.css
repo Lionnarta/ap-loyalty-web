@@ -9,6 +9,7 @@
   --orange-2: #FFB100;
   --silver-grey: #888f95;
   --silver-grey-2: #969CA2;
+  --silver-grey-3: #979797;
 }
 
 * {
@@ -28,6 +29,10 @@
 .ap-flex-col {
   display: flex;
   flex-direction: column;
+}
+
+.ap-wrap {
+  flex-wrap: wrap;
 }
 
 .ap-block {
@@ -62,6 +67,10 @@
   margin-bottom: 20px;
 }
 
+.ap-mb-22 {
+  margin-bottom: 22px;
+}
+
 .ap-mb-30 {
   margin-bottom: 30px;
 }
@@ -72,6 +81,10 @@
 
 .ap-mt-20 {
   margin-top: 20px;
+}
+
+.ap-mt-30 {
+  margin-top: 30px;
 }
 
 .ap-mx-8 {
@@ -189,6 +202,10 @@
   font-size: 22px;
 }
 
+.ap-font-24 {
+  font-size: 24px;
+}
+
 .ap-font-25 {
   font-size: 25px;
 }
@@ -277,6 +294,10 @@
   color: var(--silver-grey-2);
 }
 
+.ap-text-silvergrey-v3 {
+  color: var(--silver-grey-3);
+}
+
 .ap-icon {
   height: 20px;
 }
@@ -303,6 +324,10 @@
 
 .ap-underline {
   text-decoration: underline;
+}
+
+.ap-none {
+  text-decoration: none;
 }
 
 .ap-pointer {

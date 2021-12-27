@@ -17,7 +17,7 @@ const SideBar = () => {
                     AP Loyalty
                     <span className='ap-font-12 ap-text-white ap-content-400 ap-s-new'>Baru</span>
                 </a>
-                <a href="/cp" className={ window.location.pathname=='/cp' ? 'ap-block ap-s-link ap-s-active' : 'ap-block ap-s-link' }>
+                <a href="/cp" className={ window.location.pathname.startsWith('/cp') ? 'ap-block ap-s-link ap-s-active' : 'ap-block ap-s-link' }>
                     AP Coin & AP Poin
                     <span className='ap-font-12 ap-text-white ap-content-400 ap-s-new'>Baru</span>
                 </a>

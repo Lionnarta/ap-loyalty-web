@@ -38,7 +38,7 @@ const CoinPoinInformation:React.FC<CoinPoinInfoProps> = (props) => {
                                 <img src={ coinIcon } alt="Coin Aku Pintar" />
                                 <p className='ap-coin-text ap-font-20 ap-content-600'>1500 AP Coin</p>
                             </div>
-                            <div className='ap-coin-topup' onClick={ () => props.setShowDownload(true) }>
+                            <div className={ (props.width <= 1200 && props.width > 768) && props.sideState ? 'ap-coin-topup ap-coin-topup-wside' : 'ap-coin-topup'} onClick={ () => props.setShowDownload(true) }>
                                 <img src={ topupcoin } alt="Top Up Aku Pintar" className='ap-mr-5' /> 
                                 <p className='ap-font-12 ap-content-500 ap-center ap-text-darkblue'>Top Up</p>
                             </div>

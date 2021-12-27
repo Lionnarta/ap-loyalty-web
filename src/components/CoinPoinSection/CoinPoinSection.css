@@ -13,6 +13,11 @@
     width: 100%;
 }
 
+.ap-cp-v4 {
+    padding: 4% 4% 2% 3.5%;
+    width: 100%;
+}
+
 .ap-cp-btm-most {
     margin-bottom: 10%;
 }
@@ -204,6 +209,7 @@
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     background-color: #fff;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .ap-cp-card-content {
@@ -314,6 +320,11 @@ img.ap-cp-voucher-icon {
     font-size: 15px;
 }
 
+.ap-coin-topup-wside {
+    bottom: 1%;
+    right: 1%;
+}
+
 @media screen and (max-width: 768px) {
     .ap-cp-header {
         display: flex;
@@ -371,6 +382,11 @@ img.ap-cp-voucher-icon {
 
     .ap-cp-btm-info {
         margin-top: 20px;
+    }
+
+    .ap-coin-topup {
+        bottom: 1%;
+        right: 1%;
     }
 }
 

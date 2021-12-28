@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './PremiumContentSection.css'
 import '../CoinPoinSection/CoinPoinSection.css'
-import ExchangeModal1 from '../Modal/ExchangeModal1'
+import ExchangeModal from '../Modal/ExchangeModal'
 import backArrow from '../../assets/images/backArrow2.png'
 import voucher from '../../assets/images/voucher1.png'
 import coin from '../../assets/images/coin.png'
@@ -14,7 +14,13 @@ interface PDProps {
 
 const PremiumDetail:React.FC<PDProps> = (props) => {
 
+    const [showEM, setShowEM] = useState(false);
     const [showEM1, setShowEM1] = useState(false);
+
+    const openModal = () => {
+        setShowEM(true);
+        setShowEM1(true);
+    }
 
     return (
         <div className='ap-w-full'>
@@ -55,7 +61,7 @@ const PremiumDetail:React.FC<PDProps> = (props) => {
                                 </div>
                             </div>
                         </div>
-                        <div className='ap-pcs-btn-v3' onClick={ () => setShowEM1(true) }>
+                        <div className='ap-pcs-btn-v3' onClick={ openModal }>
                             <p>Tukar</p>
                         </div>
                     </div>
@@ -87,7 +93,7 @@ const PremiumDetail:React.FC<PDProps> = (props) => {
                     </ol>
                 </div>
             </section>
-            <ExchangeModal1 showEM1={ showEM1 } setShowEM1={ setShowEM1 } />
+            <ExchangeModal showEM={ showEM } setShowEM={ setShowEM } showEM1={ showEM1 } setShowEM1={ setShowEM1 } />
         </div>
     )
 }

@@ -10,6 +10,7 @@
 
 .ap-modal-position {
     height: 100vh;
+    width: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -86,6 +87,23 @@
     position: relative;
     border-radius: 20px;
     transition: all 200ms ease;
+}
+
+.ap-modal-container-v6 {
+    width: 35%;
+    min-width: 420px;
+    padding: 35px 40px;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%);
+    background: white;
+    color: black;
+    z-index: 1000 !important;
+    position: relative;
+    border-radius: 20px;
+    transition: all 200ms ease;
+}
+
+.ap-modal-padding {
+    padding: 35px 55px;
 }
 
 .ap-close-modal {
@@ -327,6 +345,56 @@
     background-color: #F1F1F1;
 }
 
+.ap-em2-btn {
+    width: 48%;
+    padding: 12px;
+    margin-right: 2%;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid var(--dark-blue);
+    color: var(--dark-blue);
+    cursor: pointer;
+    transition: all 200ms ease;
+}
+
+.ap-em2-btn:hover {
+    color: white;
+    background-color: var(--dark-blue);
+}
+
+.ap-yes-btn {
+    margin-right: 0;
+    margin-left: 2%;
+    color: white;
+    background-color: var(--dark-blue);
+}
+
+.ap-yes-btn:hover {
+    color: var(--dark-blue);
+    background-color: white;
+}
+
+.ap-reward-check-btn {
+    display: block;
+    padding: 12px;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 1px solid var(--dark-blue);
+    color: white;
+    background-color: var(--dark-blue);
+    transition: all 200ms ease;
+}
+
+.ap-reward-check-btn:hover {
+    color: var(--dark-blue);
+    background-color: white;
+}
+
 @media screen and (max-width: 1024px) {
     .ap-modal-container-v1 {
         width: 80%;
@@ -374,7 +442,7 @@
         min-width: 400px;
     }
 
-    .ap-modal-container-v5 {
+    .ap-modal-container-v5, .ap-modal-container-v6 {
         min-width: 390px;
     }
 }

@@ -9,6 +9,7 @@ import {
 import './App.css';
 import Referral from './pages/Refferal/Referral';
 import CoinPoin from './pages/CoinPoin/CoinPoin';
+import Loyalty from './pages/Loyalty/Loyalty';
 import PremiumAccess from './pages/PremiumAccess/PremiumAccess';
 import PremiumAccessDetail from './pages/PremiumAccessDetail/PremiumAccessDetail';
 import Voucher from './pages/Voucher/Voucher';
@@ -21,7 +22,7 @@ function App() {
     
   const toggleSide = () => {
     setSideState(!sideState);
-  }
+  };
   
   useEffect(() => {
 
@@ -33,20 +34,20 @@ function App() {
       else {
         setSideState(true);
       }
-    }
+    };
 
     window.addEventListener("resize", handleResize);
 
     return () => window.removeEventListener("resize", handleResize);
 
-  })
+  });
 
   useEffect(() => {
     setWidth(window.innerWidth);
     if (width <= 768) {
         setSideState(false);
     }
-  }, [])
+  }, []);
 
   return (
     <Router>
@@ -54,6 +55,7 @@ function App() {
         <Route path='/' element={<Navigate to="/ap-loyalty-web" />} />
         <Route path="ap-loyalty-web" element={<Referral sideState={ sideState } width={ width } toggleSide={ toggleSide } />} />
         <Route path="ap-loyalty-web/cp" element={<CoinPoin sideState={ sideState } width={ width } toggleSide={ toggleSide } />} />
+        <Route path="ap-loyalty-web/lyl" element={<Loyalty sideState={ sideState } width={ width } toggleSide={ toggleSide } />} />
         <Route path="ap-loyalty-web/cp/pa" element={<PremiumAccess sideState={ sideState } width={ width } toggleSide={ toggleSide } />} />
         <Route path="ap-loyalty-web/cp/vc" element={<Voucher sideState={ sideState } width={ width } toggleSide={ toggleSide } />} />
         <Route path="ap-loyalty-web/cp/reward" element={<Reward sideState={ sideState } width={ width } toggleSide={ toggleSide } />} />

@@ -17,7 +17,7 @@ const AccessNav:React.FC<AccessrNavProps> = (props) => {
                     <p className='ap-content-500 ap-font-22 ap-mb-10'>Whoops!</p>
                     <p className='ap-content-400-v2 ap-font-18'>Belum ada Akses Premium yang tersedia nih Sobat Pintar, tukarkan poin dan coinmu sekarang juga!</p>
                 </div>
-                <a href="/ap-loyalty-web" className={ props.sideState && (props.width < 1024 && props.width > 768) ? 'ap-an-btn ap-an-btn-wside' : 'ap-an-btn' }>Tukar AP Coin & Poin</a>
+                <a href="/ap-loyalty-web/cp" className={ props.sideState && (props.width < 1024 && props.width > 768) ? 'ap-an-btn ap-an-btn-wside' : 'ap-an-btn' }>Tukar AP Coin & Poin</a>
             </div>
         </div>
     )

@@ -16,8 +16,6 @@ import Reward from './pages/Rewards/Reward';
 function App() {
 
   const [sideState, setSideState] = useState(true);
-
-  
   const [width, setWidth] = useState(window.innerWidth);
     
   const toggleSide = () => {

@@ -102,6 +102,19 @@
     transition: all 200ms ease;
 }
 
+.ap-modal-container-v7 {
+    width: 45%;
+    max-height: 600px;
+    padding: 40px 50px;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%);
+    background: white;
+    color: black;
+    z-index: 1000 !important;
+    position: relative;
+    border-radius: 20px;
+    transition: all 200ms ease;
+}
+
 .ap-modal-padding {
     padding: 35px 55px;
 }
@@ -395,8 +408,77 @@
     background-color: white;
 }
 
+.ap-rm-box {
+    height: 230px;
+    overflow-y: scroll;
+}
+
+.ap-rm-box::-webkit-scrollbar {
+    width: 3px;
+}
+
+.ap-rm-box::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background-color: #979797;
+}
+
+.ap-rm-box::-webkit-scrollbar-thumb:hover {
+    background-color: #868686;
+}
+
+.ap-rd-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.ap-rd-img {
+    width: 35%;
+    max-width: 200px;
+    align-self: center;
+    border-radius: 10px;
+    border: 1px solid var(--dark-blue);
+}
+
+.ap-rd-header-text {
+    width: 60%;
+    padding-left: 3%;
+    align-self: end;
+}
+
+.ap-rm-box-list {
+    padding-left: 20px;
+}
+
+.ap-rm-box-list>li {
+    margin-bottom: 5px;
+}
+
+.ap-rm-btn {
+    padding: 12px;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid var(--dark-blue);
+    background-color: var(--dark-blue);
+    cursor: pointer;
+    transition: all 200ms ease;
+}
+
+.ap-rm-btn:hover {
+    color: var(--dark-blue);
+    background-color: #fff;
+}
+
 @media screen and (max-width: 1024px) {
     .ap-modal-container-v1 {
+        width: 80%;
+    }
+
+    .ap-modal-container-v7 {
         width: 80%;
     }
 
@@ -411,6 +493,10 @@
 
 @media screen and (max-width: 768px) {
     .ap-modal-container-v1 {
+        width: 90%;
+    }
+
+    .ap-modal-container-v7 {
         width: 90%;
     }
 

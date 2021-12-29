@@ -150,6 +150,10 @@
   padding-bottom: 15px;
 }
 
+.ap-lh-v1 {
+  line-height: 22px;
+}
+
 .ap-z-1000 {
   z-index: 1000 !important;
 }

@@ -26,8 +26,78 @@
 }
 
 .ap-an-box {
+    display: flex;
+    align-items: center;
     width: 100%;
-    padding: 40px 30px;
+    padding: 60px 80px;
     border-radius: 6px;
     background-image: linear-gradient(90deg, #065B94 -39.68%, #0070BA 67.12%);
+}
+
+.ap-an-img {
+    width: 15%;
+    margin-right: 3%;
+}
+
+.ap-an-text {
+    width: 50%;
+    color: white;
+}
+
+.ap-an-btn {
+    padding: 10px 20px;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 10px;
+    text-align: center;
+    color: var(--dark-blue);
+    border: 1px solid white;
+    background-color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.ap-an-box-wside {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px;
+}
+
+.ap-an-img-wside {
+    width: 40%;
+    margin-bottom: 20px;
+}
+
+.ap-an-text-wside {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.ap-an-btn-wside {
+    width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    .ap-an-box {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px;
+    }
+
+    .ap-an-img {
+        width: 40%;
+        margin-bottom: 20px;
+    }
+
+    .ap-an-text {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .ap-an-btn {
+        width: 50%;
+    }
 }

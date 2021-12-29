@@ -109,6 +109,10 @@
   margin-right: 10px;
 }
 
+.ap-mr-12 {
+  margin-right: 12px;
+}
+
 .ap-mr-15 {
   margin-right: 15px;
 }
@@ -152,6 +156,10 @@
 
 .ap-lh-v1 {
   line-height: 22px;
+}
+
+.ap-lh-v2 {
+  line-height: 15px;
 }
 
 .ap-z-1000 {
@@ -332,6 +340,10 @@
 
 .ap-icon-v6 {
   width: 30px;
+}
+
+.ap-icon-v7 {
+  height: 20px;
 }
 
 .ap-underline {

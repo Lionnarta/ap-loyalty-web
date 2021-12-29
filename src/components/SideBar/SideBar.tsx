@@ -2,6 +2,8 @@ import React from 'react';
 import { Navigate } from 'react-router-dom';
 import './SideBar.css';
 import astroIcon from '../../assets/images/astroIcon2.png';
+import coin from '../../assets/images/coin.png';
+import poin from '../../assets/images/poin.png';
 
 const SideBar = () => {
 
@@ -10,10 +12,18 @@ const SideBar = () => {
             <div className='ap-s-profil ap-mb-40'>
                 <img src={ astroIcon } alt="Astro" className='ap-icon-v4 ap-mb-10' />
                 <p className='ap-font-20 ap-content-700'>Astro Aku Pintar</p>
-                <p className='ap-font-12 ap-text-silvergrey'>SMAN Aku Pintar Jakarta</p>
+                <p className='ap-font-12 ap-text-silvergrey ap-mb-16'>SMAN Aku Pintar Jakarta</p>
+                <div className='ap-flex ap-align-center ap-mb-10'>
+                    <img src={ coin } alt="Coin Pintar" className='ap-icon-v7 ap-mr-10' />
+                    <p className='ap-text-orange-v2 ap-content-500 ap-font-12'>1500 AP Coin</p>
+                </div>
+                <div className='ap-flex ap-align-center'>
+                    <img src={ poin } alt="Poin Pintar" className='ap-icon-v7 ap-mr-12' style={{paddingLeft: "3px"}} />
+                    <p className='ap-text-darkblue ap-content-500 ap-font-12'>1500 AP Poin</p>
+                </div>
             </div>
             <div>
-                <a href="" className='ap-block ap-s-link'>
+                <a href="/ap-loyalty-web/lyl" className={ window.location.pathname.startsWith('/ap-loyalty-web/lyl') ? 'ap-block ap-s-link ap-s-active' : 'ap-block ap-s-link' }>
                     AP Loyalty
                     <span className='ap-font-12 ap-text-white ap-content-400 ap-s-new'>Baru</span>
                 </a>

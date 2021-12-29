@@ -3,6 +3,7 @@ import './Loyalty.css';
 import Footer from '../../components/Footer/Footer';
 import NavigationBar from '../../components/NavigationBar/NavigationBar';
 import SideBar from '../../components/SideBar/SideBar';
+import LoyaltySection from '../../components/LoyaltySection/LoyaltySection'
 
 interface LoyaltyProps {
     sideState: boolean,
@@ -19,7 +20,7 @@ const Loyalty:React.FC<LoyaltyProps> = (props) => {
                 {
                     (props.sideState)?<SideBar />:null
                 }
-                {/* <ReferralSection sideState={ props.sideState } width = { props.width } /> */}
+                <LoyaltySection sideState={ props.sideState } width = { props.width } />
             </div>
             <Footer />
         </div>

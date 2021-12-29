@@ -1,0 +1,177 @@
+.ap-loyalty {
+    padding: 3% 4%;
+    width: 100%;
+}
+
+.ap-loyalty-container {
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, #065b94, var(--dark-blue));
+    background-repeat: no-repeat;
+}
+
+.ap-lyl-ls {
+    position: relative;
+    width: 42%;
+    margin-right: 3%;
+}
+
+.ap-lyl-rs {
+    width: 52%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-left: 3%;
+}
+
+.ap-lyl-img {
+    width: 100%;
+}
+
+.ap-lyl-img-v2 {
+    width: 100%;
+    position: relative;
+    bottom: 30px;
+}
+
+.ap-lyl-img-v3 {
+    width: 15%;
+}
+
+.ap-lyl-step {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    padding: 3px 8px;
+    border-radius: 50%;
+    background-color: #D8D8D8;
+}
+
+.ap-lyl-active {
+    width: 50px;
+    height: 50px;
+    background-color: #FFB200;
+}
+
+.ap-lyl-step-text {
+    max-width: 12.5%;
+}
+
+.ap-lyl-step-text-v2 {
+    max-width: 20%;
+}
+
+.ap-lyl-benefit {
+    width: 100%;
+    padding: 40px 30px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    background-color: #fff;
+}
+
+.ap-lyl-benefit-c {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+}
+
+.ap-lyl-benefit-c2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    border-radius: 6px;
+    background-color: var(--dark-blue);
+    color: white;
+}
+
+.ap-lyl-btn {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid var(--dark-blue);
+    text-align: center;
+    color: white;
+    background-color: var(--dark-blue);
+    transition: all 200ms ease;
+    cursor: pointer;
+}
+
+.ap-lyl-btn:hover {
+    color: var(--dark-blue);
+    background-color: white;
+}
+
+.ap-lyl-w {
+    width: 75%;
+}
+
+.ap-loyalty-container-wside {
+    flex-direction: column;
+}
+
+.ap-lyl-rs-wside {
+    width: 100%;
+    margin-left: 0;
+}
+
+.ap-lyl-ls-wside {
+    text-align: center;
+    width: 100%;
+    margin-right: 0;
+}
+
+.ap-lyl-img-wside {
+    width: 40%;
+}
+
+.ap-lyl-img-v2-wside {
+    width: 80%;
+    bottom: 20px
+}
+
+@media screen and (max-width: 768px) {
+
+    .ap-loyalty-container {
+        flex-direction: column;
+    }
+
+    .ap-lyl-rs {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .ap-lyl-ls {
+        text-align: center;
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .ap-lyl-img {
+        width: 40%;
+    }
+
+    .ap-lyl-img-v2 {
+        width: 80%;
+        bottom: 20px
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .ap-lyl-img {
+        width: 80%;
+    }
+
+    .ap-lyl-img-v2 {
+        width: 100%;
+        bottom: 30px
+    }
+}

@@ -3,6 +3,7 @@ import './Reward.css'
 import Footer from '../../components/Footer/Footer'
 import NavigationBar from '../../components/NavigationBar/NavigationBar'
 import SideBar from '../../components/SideBar/SideBar'
+import RewardSection from '../../components/RewardSection/RewardSection'
 
 interface RewardsProps {
     sideState: boolean,
@@ -20,7 +21,7 @@ const Reward:React.FC<RewardsProps> = (props) => {
                     (props.sideState)?<SideBar />:null
                 }
                 <div className='ap-w-full'>
-                    {/* <PremiumAccessSection sideState={ props.sideState } width = { props.width } /> */}
+                    <RewardSection sideState={ props.sideState } width = { props.width } />
                 </div>
             </div>
             <Footer />

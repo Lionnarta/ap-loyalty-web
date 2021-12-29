@@ -1,0 +1,33 @@
+.ap-rs-tab {
+    padding: 6px;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--dark-grey);
+    border-bottom: 4px solid white;
+    cursor: pointer;
+}
+
+.ap-rs-tab-active {
+    font-weight: 600;
+    color: var(--dark-blue);
+    border-bottom: 4px solid var(--dark-blue);
+}
+
+.ap-vn-icon {
+    width: 18px;
+    margin-right: 5px;
+}
+
+.ap-vn-used {
+    opacity: 0.6;
+    filter: grayscale(50%);
+    cursor: default;
+}
+
+.ap-an-box {
+    width: 100%;
+    padding: 40px 30px;
+    border-radius: 6px;
+    background-image: linear-gradient(90deg, #065B94 -39.68%, #0070BA 67.12%);
+}

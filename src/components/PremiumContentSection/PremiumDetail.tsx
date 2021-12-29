@@ -26,7 +26,7 @@ const PremiumDetail:React.FC<PDProps> = (props) => {
         <div className='ap-w-full'>
             <section className='ap-cp-v3 ap-text-darkgrey'>
                 <div className='ap-flex ap-align-center ap-mb-20'>
-                    <a href='/cp/pa' className='ap-flex'><img src={ backArrow } alt="Kembali" className='ap-mr-10 ap-pointer' /></a>
+                    <a href='/ap-loyalty-web/cp/pa' className='ap-flex'><img src={ backArrow } alt="Kembali" className='ap-mr-10 ap-pointer' /></a>
                     <p className='ap-font-24 ap-content-700'>Detail Rewards</p>
                 </div>
 

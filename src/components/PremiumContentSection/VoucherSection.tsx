@@ -19,12 +19,12 @@ const VoucherSection:React.FC<VSProps> = (props) => {
         <div>
             <section className='ap-cp-v4 ap-text-darkgrey'>
                 <div className='ap-flex ap-align-center ap-mb-20'>
-                    <a href='/cp' className='ap-flex'><img src={ backArrow } alt="Kembali" className='ap-mr-10 ap-pointer' /></a>
+                    <a href='/ap-loyalty-web/cp' className='ap-flex'><img src={ backArrow } alt="Kembali" className='ap-mr-10 ap-pointer' /></a>
                     <p className='ap-font-20 ap-content-700'>Voucher Pintar</p>
                 </div>
 
                 <div className={ (props.width <= 1200 && props.width > 768) && props.sideState ? 'ap-cp-card-container ap-cp-card-container-wside ap-wrap' : 'ap-cp-card-container ap-wrap' }>
-                    <a href='/cp/pa/d' className={ (props.width <= 1200 && props.width > 768) && props.sideState ? 'ap-cp-card ap-cp-card-wside ap-mb-40' : 'ap-cp-card ap-mb-40' }>
+                    <a href='/ap-loyalty-web/cp/pa/d' className={ (props.width <= 1200 && props.width > 768) && props.sideState ? 'ap-cp-card ap-cp-card-wside ap-mb-40' : 'ap-cp-card ap-mb-40' }>
                         <img src={ voucher1 } alt="Voucher" />
                         <div className='ap-cp-card-content'>
                             <div className='ap-cp-my-auto'>
@@ -42,7 +42,7 @@ const VoucherSection:React.FC<VSProps> = (props) => {
                         </div>
                     </a>
 
-                    <a href='/cp/pa/d' className={ (props.width <= 1200 && props.width > 768) && props.sideState ? 'ap-cp-card ap-cp-card-wside ap-mb-40' : 'ap-cp-card ap-mb-40' }>
+                    <a href='/ap-loyalty-web/cp/pa/d' className={ (props.width <= 1200 && props.width > 768) && props.sideState ? 'ap-cp-card ap-cp-card-wside ap-mb-40' : 'ap-cp-card ap-mb-40' }>
                         <img src={ voucher3 } alt="Voucher" />
                         <div className='ap-cp-card-content'>
                             <div className='ap-cp-my-auto'>
@@ -60,7 +60,7 @@ const VoucherSection:React.FC<VSProps> = (props) => {
                         </div>
                     </a>
 
-                    <a href='/cp/pa/d' className={ (props.width <= 1200 && props.width > 768) && props.sideState ? 'ap-cp-card ap-cp-card-wside ap-mb-40' : 'ap-cp-card ap-mb-40' }>
+                    <a href='/ap-loyalty-web/cp/pa/d' className={ (props.width <= 1200 && props.width > 768) && props.sideState ? 'ap-cp-card ap-cp-card-wside ap-mb-40' : 'ap-cp-card ap-mb-40' }>
                         <img src={ voucher4 } alt="Voucher" />
                         <div className='ap-cp-card-content'>
                             <div className='ap-cp-my-auto'>
@@ -78,7 +78,7 @@ const VoucherSection:React.FC<VSProps> = (props) => {
                         </div>
                     </a>
 
-                    <a href='/cp/pa/d' className={ (props.width <= 1200 && props.width > 768) && props.sideState ? 'ap-cp-card ap-cp-card-wside ap-mb-40' : 'ap-cp-card ap-mb-40' }>
+                    <a href='/ap-loyalty-web/cp/pa/d' className={ (props.width <= 1200 && props.width > 768) && props.sideState ? 'ap-cp-card ap-cp-card-wside ap-mb-40' : 'ap-cp-card ap-mb-40' }>
                         <img src={ voucher2 } alt="Voucher" />
                         <div className='ap-cp-card-content'>
                             <div className='ap-cp-my-auto'>

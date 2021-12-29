@@ -18,12 +18,12 @@ const PremiumAccessSection:React.FC<PASProps> = (props) => {
         <div className='ap-w-full'>
             <section className='ap-cp-v4 ap-text-darkgrey'>
                 <div className='ap-flex ap-align-center ap-mb-20'>
-                    <a href='/cp' className='ap-flex'><img src={ backArrow } alt="Kembali" className='ap-mr-10 ap-pointer' /></a>
+                    <a href='/ap-loyalty-web/cp' className='ap-flex'><img src={ backArrow } alt="Kembali" className='ap-mr-10 ap-pointer' /></a>
                     <p className='ap-font-24 ap-content-700'>Akses Premium</p>
                 </div>
 
                 <div className={ (props.width <= 1200 && props.width > 768) && props.sideState ? 'ap-cp-card-container ap-cp-card-container-wside ap-wrap' : 'ap-cp-card-container ap-wrap' }>
-                    <a href='/cp/pa/d' className={ (props.width <= 1200 && props.width > 768) && props.sideState ? 'ap-cp-card ap-cp-card-wside ap-mb-40' : 'ap-cp-card ap-mb-40' }>
+                    <a href='/ap-loyalty-web/cp/pa/d' className={ (props.width <= 1200 && props.width > 768) && props.sideState ? 'ap-cp-card ap-cp-card-wside ap-mb-40' : 'ap-cp-card ap-mb-40' }>
                         <img src={ pa } alt="Premium Access" />
                         <div className='ap-cp-card-content'>
                             <div className='ap-cp-my-auto'>
@@ -37,7 +37,7 @@ const PremiumAccessSection:React.FC<PASProps> = (props) => {
                         </div>
                     </a>
 
-                    <a href='/cp/pa/d' className={ (props.width <= 1200 && props.width > 768) && props.sideState ? 'ap-cp-card ap-cp-card-wside ap-mb-40' : 'ap-cp-card ap-mb-40' }>
+                    <a href='/ap-loyalty-web/cp/pa/d' className={ (props.width <= 1200 && props.width > 768) && props.sideState ? 'ap-cp-card ap-cp-card-wside ap-mb-40' : 'ap-cp-card ap-mb-40' }>
                         <img src={ pa3 } alt="Premium Access" />
                         <div className='ap-cp-card-content'>
                             <div className='ap-cp-my-auto'>
@@ -51,7 +51,7 @@ const PremiumAccessSection:React.FC<PASProps> = (props) => {
                         </div>
                     </a>
 
-                    <a href='/cp/pa/d' className={ (props.width <= 1200 && props.width > 768) && props.sideState ? 'ap-cp-card ap-cp-card-wside ap-mb-40' : 'ap-cp-card ap-mb-40' }>
+                    <a href='/ap-loyalty-web/cp/pa/d' className={ (props.width <= 1200 && props.width > 768) && props.sideState ? 'ap-cp-card ap-cp-card-wside ap-mb-40' : 'ap-cp-card ap-mb-40' }>
                         <img src={ pa2 } alt="Premium Access" />
                         <div className='ap-cp-card-content'>
                             <div className='ap-cp-my-auto'>
@@ -65,7 +65,7 @@ const PremiumAccessSection:React.FC<PASProps> = (props) => {
                         </div>
                     </a>
 
-                    <a href='/cp/pa/d' className={ (props.width <= 1200 && props.width > 768) && props.sideState ? 'ap-cp-card ap-cp-card-wside ap-mb-40' : 'ap-cp-card ap-mb-40' }>
+                    <a href='/ap-loyalty-web/cp/pa/d' className={ (props.width <= 1200 && props.width > 768) && props.sideState ? 'ap-cp-card ap-cp-card-wside ap-mb-40' : 'ap-cp-card ap-mb-40' }>
                         <img src={ pa4 } alt="Premium Access" />
                         <div className='ap-cp-card-content'>
                             <div className='ap-cp-my-auto'>

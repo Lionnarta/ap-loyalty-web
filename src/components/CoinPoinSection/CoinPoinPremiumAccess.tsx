@@ -15,10 +15,10 @@ const CoinPoinPremiumAccess:React.FC<CPPAProps> = (props) => {
             <section className='ap-cp-v3 ap-text-darkgrey'>
                 <div className='ap-flex ap-space ap-mb-20'>
                     <p className='ap-font-20 ap-content-700'>Akses Premium</p>
-                    <a href='/cp/pa' className='ap-font-20 ap-content-500-v2 ap-text-darkblue ap-none'>Lihat Semua</a>
+                    <a href='/ap-loyalty-web/cp/pa' className='ap-font-20 ap-content-500-v2 ap-text-darkblue ap-none'>Lihat Semua</a>
                 </div>
                 <div className={ (props.width <= 1200 && props.width > 768) && props.sideState ? 'ap-cp-card-container ap-cp-card-container-wside' : 'ap-cp-card-container' }>
-                    <a href='/cp/pa/d' className={ (props.width <= 1200 && props.width > 768) && props.sideState ? 'ap-cp-card ap-cp-card-wside' : 'ap-cp-card' }>
+                    <a href='/ap-loyalty-web/cp/pa/d' className={ (props.width <= 1200 && props.width > 768) && props.sideState ? 'ap-cp-card ap-cp-card-wside' : 'ap-cp-card' }>
                         <img src={ pa } alt="Premium Access" />
                         <div className='ap-cp-card-content'>
                             <div className='ap-cp-my-auto'>
@@ -31,7 +31,7 @@ const CoinPoinPremiumAccess:React.FC<CPPAProps> = (props) => {
                             </div>
                         </div>
                     </a>
-                    <a href='/cp/pa/d' className={ (props.width <= 1200 && props.width > 768) && props.sideState ? 'ap-cp-card ap-cp-card-wside' : 'ap-cp-card' }>
+                    <a href='/ap-loyalty-web/cp/pa/d' className={ (props.width <= 1200 && props.width > 768) && props.sideState ? 'ap-cp-card ap-cp-card-wside' : 'ap-cp-card' }>
                         <img src={ pa2 } alt="Premium Access" />
                         <div className='ap-cp-card-content'>
                             <div className='ap-cp-my-auto'>

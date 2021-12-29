@@ -3,7 +3,8 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Link
+  Link,
+  Navigate
 } from "react-router-dom";
 import './App.css';
 import Referral from './pages/Refferal/Referral';
@@ -50,12 +51,13 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path='/' element={<Referral sideState={ sideState } width={ width } toggleSide={ toggleSide } />} />
-        <Route path="cp" element={<CoinPoin sideState={ sideState } width={ width } toggleSide={ toggleSide } />} />
-        <Route path="cp/pa" element={<PremiumAccess sideState={ sideState } width={ width } toggleSide={ toggleSide } />} />
-        <Route path="cp/vc" element={<Voucher sideState={ sideState } width={ width } toggleSide={ toggleSide } />} />
-        <Route path="cp/reward" element={<Reward sideState={ sideState } width={ width } toggleSide={ toggleSide } />} />
-        <Route path="cp/pa/d" element={<PremiumAccessDetail sideState={ sideState } width={ width } toggleSide={ toggleSide } />} />
+        <Route path='/' element={<Navigate to="/ap-loyalty-web" />} />
+        <Route path="ap-loyalty-web" element={<Referral sideState={ sideState } width={ width } toggleSide={ toggleSide } />} />
+        <Route path="ap-loyalty-web/cp" element={<CoinPoin sideState={ sideState } width={ width } toggleSide={ toggleSide } />} />
+        <Route path="ap-loyalty-web/cp/pa" element={<PremiumAccess sideState={ sideState } width={ width } toggleSide={ toggleSide } />} />
+        <Route path="ap-loyalty-web/cp/vc" element={<Voucher sideState={ sideState } width={ width } toggleSide={ toggleSide } />} />
+        <Route path="ap-loyalty-web/cp/reward" element={<Reward sideState={ sideState } width={ width } toggleSide={ toggleSide } />} />
+        <Route path="ap-loyalty-web/cp/pa/d" element={<PremiumAccessDetail sideState={ sideState } width={ width } toggleSide={ toggleSide } />} />
       </Routes>
     </Router>
   );

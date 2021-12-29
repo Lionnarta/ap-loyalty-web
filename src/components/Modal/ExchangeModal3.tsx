@@ -28,7 +28,7 @@ const ExchangeModal3:React.FC<EM3Props> = (props) => {
                         <p className='ap-content-600 ap-font-19 ap-mb-20'>Transaksi Berhasil</p>
                         <p className='ap-content-400-v2 ap-font-17 ap-mb-16'>Kumpulkan poin lebih banyak lagi dan tukar dengan coin untuk keuntungan lebih besar</p>
                         <p className='ap-content-400-v2 ap-font-17 ap-mb-40'>Cek 'Rewards Saya' untuk melihat semua rewards kamu</p>
-                        <a href="/cp/reward" className='ap-reward-check-btn' onClick={ closeModal }>Cek Rewards Kamu</a>
+                        <a href="/ap-loyalty-web/cp/reward" className='ap-reward-check-btn' onClick={ closeModal }>Cek Rewards Kamu</a>
                     </div>
                 </div>
             ) : null }

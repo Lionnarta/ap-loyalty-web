@@ -17,11 +17,11 @@ const SideBar = () => {
                     AP Loyalty
                     <span className='ap-font-12 ap-text-white ap-content-400 ap-s-new'>Baru</span>
                 </a>
-                <a href="/cp" className={ window.location.pathname.startsWith('/cp') ? 'ap-block ap-s-link ap-s-active' : 'ap-block ap-s-link' }>
+                <a href="/ap-loyalty-web/cp" className={ window.location.pathname.startsWith('/ap-loyalty-web/cp') ? 'ap-block ap-s-link ap-s-active' : 'ap-block ap-s-link' }>
                     AP Coin & AP Poin
                     <span className='ap-font-12 ap-text-white ap-content-400 ap-s-new'>Baru</span>
                 </a>
-                <a href="/" className={ window.location.pathname=='/' ? 'ap-block ap-s-link ap-s-active' : 'ap-block ap-s-link' }>
+                <a href="/ap-loyalty-web" className={ window.location.pathname=='/ap-loyalty-web' ? 'ap-block ap-s-link ap-s-active' : 'ap-block ap-s-link' }>
                     Ajak Teman
                     <span className='ap-font-12 ap-text-white ap-content-400 ap-s-new'>Baru</span>
                 </a>

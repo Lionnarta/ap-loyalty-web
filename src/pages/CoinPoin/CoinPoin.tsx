@@ -41,7 +41,7 @@ const CoinPoin:React.FC<CoinPoinProps> = (props) => {
             </div>
             <div className='ap-cp-voucher'>
                 <div className='ap-cp-voucher-hov' onMouseEnter={ () => setShowFocus(true) } onMouseLeave={ () => setShowFocus(false) } >
-                    <a href="/cp/reward"><img src={ voucher } alt="Voucher" /></a>
+                    <a href="/ap-loyalty-web/cp/reward"><img src={ voucher } alt="Voucher" /></a>
                 </div>
                 <p className='ap-cp-voucher-text'>Reward Saya</p>
             </div>

@@ -114,6 +114,25 @@
     width: 75%;
 }
 
+.ap-lyl-list {
+    height: 300px;
+    padding: 10px;
+    overflow-y: scroll;
+}
+
+.ap-lyl-list::-webkit-scrollbar {
+    width: 3px;
+}
+
+.ap-lyl-list::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background-color: #979797;
+}
+
+.ap-lyl-list::-webkit-scrollbar-thumb:hover {
+    background-color: #868686;
+}
+
 .ap-loyalty-container-wside {
     flex-direction: column;
 }

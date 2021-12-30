@@ -29,7 +29,7 @@ const TermModalCP:React.FC<TermCPProps> = (props) => {
                                     <img src={ timesIcon } alt="Close Modal" className='ap-icon-v5' />
                                 </div>
                                 <p className='ap-font-22 ap-content-600 ap-center ap-mb-20'>Syarat dan Ketentuan</p>
-                                <div className='ap-term-ol-container'>
+                                <div className='ap-term-ol-container ap-content-400-v2'>
                                     <p className='ap-mb-10 ap-content-600 ap-term-pos'>AP Poin</p>
                                     <ol className='ap-term-ol'>
                                         <li>Program "AP Poin" berlaku untuk seluruh pengguna Aku Pintar.</li>

@@ -29,7 +29,7 @@ const TermModal:React.FC<TermProps> = (props) => {
                                         <img src={ timesIcon } alt="Close Modal" className='ap-icon-v5' />
                                     </div>
                                     <p className='ap-font-22 ap-content-600 ap-center ap-mb-20'>Syarat dan Ketentuan</p>
-                                    <div className='ap-term-ol-container'>
+                                    <div className='ap-term-ol-container ap-content-400-v2'>
                                         <ol className='ap-term-ol'>
                                             <li>Program "Ajak Teman" berlaku untuk seluruh pengguna Aku Pintar.</li>
                                             <li>Kode referralmu hanya bisa digunakan maksimal oleh 10 teman.</li>

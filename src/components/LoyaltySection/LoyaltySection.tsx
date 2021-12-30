@@ -4,6 +4,7 @@ import member from '../../assets/images/member.png'
 import stepbar from '../../assets/images/stepbar.png'
 import Benefit from './Benefit'
 import BenefitList from './BenefitList'
+import TermModalLYL from '../Modal/TermModalLYL'
 
 interface LSProp {
     sideState: boolean,
@@ -13,6 +14,7 @@ interface LSProp {
 const LoyaltySection:React.FC<LSProp> = (props) => {
 
     const [benefit, setShowBenefit] = useState(true);
+    const [showTermLyl, setShowTermLyl] = useState(false);
 
     return (
         <div className='ap-w-full'>
@@ -26,10 +28,11 @@ const LoyaltySection:React.FC<LSProp> = (props) => {
                         {
                             benefit ? <Benefit setShowBenefit={ setShowBenefit } /> : <BenefitList setShowBenefit={ setShowBenefit } />
                         }
-                        <p className='ap-center ap-underline ap-text-white ap-content-400 ap-font-18 ap-pointer'>Syarat dan Ketentuan</p>
+                        <p className='ap-center ap-underline ap-text-white ap-content-400 ap-font-18 ap-pointer' onClick={ () => setShowTermLyl(true) }>Syarat dan Ketentuan</p>
                     </div>
                 </div>
             </section>
+            <TermModalLYL showTermLyl={ showTermLyl } setShowTermLyl={ setShowTermLyl } />
         </div>
     )
 }

@@ -1,0 +1,130 @@
+.ap-navigation {
+    position: fixed;
+    padding-left: 2% !important;
+    padding-right: 5% !important;
+    height: 80px;
+    z-index: 10;
+    background-color: white;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.32);
+}
+
+.ap-navigation-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ap-logo {
+    width: auto;
+    height: 30px;
+}
+
+.ap-nav-item {
+    padding: 18px 16px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-bottom: 3px solid white;
+}
+
+.ap-nav-item:hover {
+    border-bottom: 3px solid var(--dark-grey);
+}
+
+.ap-nav-item a {
+    text-decoration: none;
+}
+
+.ap-nav-item-last {
+    padding: 18px 16px;
+    display: flex;
+    align-items: center;
+}
+
+.ap-nav-item-last a {
+    text-decoration: none;
+}
+
+.ap-follow {
+    padding: 5px 20px;
+    border-radius: 6px;
+    font-weight: normal;
+    background-color: var(--dark-blue);
+}
+
+#ap-nav-mobile {
+    display: none;
+}
+
+.ap-fill-darkgrey {
+    fill: #888F95;
+}
+
+.ap-navigation-m-container {
+    display: none;
+    height: 89vh;
+    margin-top: 10px;
+    overflow-y: scroll;
+    background-color: white;
+    box-shadow: 0 5px 20px 0 rgb(0 0 0 / 7%);
+    /* animation: growDown 300ms ease-in-out forwards;
+    transform-origin: top center; */
+}
+
+.ap-nav-m-item {
+    padding: 12px 16px;
+    text-align: center;
+    border-bottom: 3px solid white;
+}
+
+.ap-nav-m-item a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.ap-nav-m-item:hover {
+    border-bottom: 3px solid var(--dark-grey);
+}
+
+.ap-nav-m-subitem {
+    display: block;
+    padding: 12px 16px;
+    text-align: center;
+}
+
+.ap-nav-ms-subitem {
+    display: block;
+    margin-top: 15px;
+    text-decoration: none;
+}
+
+.ap-nav-ms-subitem:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1124px) {
+    #ap-nav-desktop {
+        display: none;
+    }
+
+    #ap-nav-mobile {
+        display: block;
+    }
+
+    .ap-navigation-m-container {
+        display: block;
+    }
+}
+
+@keyframes growDown {
+    0% {
+        transform: scaleY(0);
+    }
+
+    100% {
+        transform: scaleY(1);
+    }
+}

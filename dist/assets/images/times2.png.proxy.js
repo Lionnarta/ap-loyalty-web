@@ -1,0 +1,1 @@
+export default "/dist/assets/images/times2.png";

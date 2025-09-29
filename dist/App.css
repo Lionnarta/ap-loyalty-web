@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  --red: #EA4335;
+  --dark-grey: #424a4c;
+  --light-blue: #4ABDF7;
+  --dark-blue: #0070ba;
+  --orange: #f1a300;
+  --orange-2: #FFB100;
+  --silver-grey: #888f95;
+  --silver-grey-2: #969CA2;
+  --silver-grey-3: #979797;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.ap-banner {
+  padding: 3% 5%;
+}
+
+.ap-flex {
+  display: flex;
+}
+
+.ap-flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.ap-wrap {
+  flex-wrap: wrap;
+}
+
+.ap-block {
+  display: block;
+}
+
+.ap-inline-block {
+  display: inline-block;
+}
+
+.ap-w-full {
+  width: 100%;
+}
+
+.ap-mb-0 {
+  margin-bottom: 0;
+}
+
+.ap-mb-5 {
+  margin-bottom: 5px;
+}
+
+.ap-mb-10 {
+  margin-bottom: 10px;
+}
+
+.ap-mb-16 {
+  margin-bottom: 16px;
+}
+
+.ap-mb-20 {
+  margin-bottom: 20px;
+}
+
+.ap-mb-22 {
+  margin-bottom: 22px;
+}
+
+.ap-mb-30 {
+  margin-bottom: 30px;
+}
+
+.ap-mb-40 {
+  margin-bottom: 40px;
+}
+
+.ap-mb-60 {
+  margin-bottom: 60px;
+}
+
+.ap-mt-20 {
+  margin-top: 20px;
+}
+
+.ap-mt-30 {
+  margin-top: 30px;
+}
+
+.ap-mx-8 {
+  margin-right: 8px;
+  margin-left: 8px;
+}
+
+.ap-mx-12 {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.ap-mr-5 {
+  margin-right: 5px;
+}
+
+.ap-mr-10 {
+  margin-right: 10px;
+}
+
+.ap-mr-15 {
+  margin-right: 15px;
+}
+
+.ap-mr-20 {
+  margin-right: 20px;
+}
+
+.ap-mr-30 {
+  margin-right: 30px;
+}
+
+.ap-mr-35 {
+  margin-right: 35px;
+}
+
+.ap-mr-40 {
+  margin-right: 40px;
+}
+
+.ap-ml-20 {
+  margin-left: 20px;
+}
+
+.ap-ml-30 {
+  margin-left: 30px;
+}
+
+.ap-ml-40 {
+  margin-left: 40px;
+}
+
+.ap-pr-10 {
+  padding-right: 10px;
+}
+
+.ap-py-15 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.ap-lh-v1 {
+  line-height: 22px;
+}
+
+.ap-z-1000 {
+  z-index: 1000 !important;
+}
+
+.ap-align-center {
+  align-items: center;
+}
+
+.ap-self-center {
+  align-self: center;
+}
+
+.ap-self-end {
+  align-self: end;
+}
+
+.ap-justify-center {
+  justify-content: center;
+}
+
+.ap-font-10 {
+  font-size: 10px;
+}
+
+.ap-font-12 {
+  font-size: 12px;
+}
+
+.ap-font-13 {
+  font-size: 13px;
+}
+
+.ap-font-14 {
+  font-size: 14px;
+}
+
+.ap-font-16 {
+  font-size: 16px;
+}
+
+.ap-font-17 {
+  font-size: 17px;
+}
+
+.ap-font-18 {
+  font-size: 18px;
+}
+
+.ap-font-19 {
+  font-size: 19px;
+}
+
+.ap-font-20 {
+  font-size: 20px;
+}
+
+.ap-font-22 {
+  font-size: 22px;
+}
+
+.ap-font-24 {
+  font-size: 24px;
+}
+
+.ap-font-25 {
+  font-size: 25px;
+}
+
+.ap-font-30 {
+  font-size: 30px;
+}
+
+.ap-letter-43 {
+  letter-spacing: 0.43px;
+}
+
+.ap-content-300 {
+  font-family: Poppins;
+  font-weight: 300;
+}
+
+.ap-content-400 {
+  font-family: Poppins;
+  font-weight: 400;
+}
+
+.ap-content-400-v2 {
+  font-family: Roboto;
+  font-weight: 400;
+}
+
+.ap-content-500 {
+  font-family: Poppins;
+  font-weight: 500;
+}
+
+.ap-content-500-v2 {
+  font-family: Roboto;
+  font-weight: 500;
+}
+
+.ap-content-600 {
+  font-family: Poppins;
+  font-weight: 600;
+}
+
+.ap-content-700 {
+  font-family: Poppins;
+  font-weight: 700;
+}
+
+.ap-content-700-v2 {
+  font-family: Roboto;
+  font-weight: 700;
+}
+
+.ap-text-darkgrey {
+  color: var(--dark-grey);
+}
+
+.ap-text-lightblue {
+  color: var(--light-blue);
+}
+
+.ap-text-darkblue {
+  color: var(--dark-blue);
+}
+
+.ap-text-orange {
+  color: var(--orange);
+}
+
+.ap-text-orange-v2 {
+  color: var(--orange-2);
+}
+
+.ap-text-white {
+  color: white;
+}
+
+.ap-text-black {
+  color: black;
+}
+
+.ap-text-silvergrey {
+  color: var(--silver-grey);
+}
+
+.ap-text-silvergrey-v2 {
+  color: var(--silver-grey-2);
+}
+
+.ap-text-silvergrey-v3 {
+  color: var(--silver-grey-3);
+}
+
+.ap-icon {
+  height: 20px;
+}
+
+.ap-icon-v2 {
+  height: 40px;
+}
+
+.ap-icon-v3 {
+  width: 25px;
+}
+
+.ap-icon-v4 {
+  width: 80px;  
+}
+
+.ap-icon-v5 {
+  width: 15px;
+}
+
+.ap-icon-v6 {
+  width: 30px;
+}
+
+.ap-underline {
+  text-decoration: underline;
+}
+
+.ap-none {
+  text-decoration: none;
+}
+
+.ap-pointer {
+  cursor: pointer;
+}
+
+.ap-justify {
+  text-align: justify;
+}
+
+.ap-center {
+  text-align: center;
+}
+
+.ap-right {
+  text-align: right;
+}
+
+.ap-space {
+  justify-content: space-between;
+}
+
+.ap-hidden {
+  overflow: hidden;
+}

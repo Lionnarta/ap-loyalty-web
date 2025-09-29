@@ -1,0 +1,1 @@
+export default "/dist/assets/images/pa2.png";

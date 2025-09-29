@@ -1,0 +1,1 @@
+export default "/dist/assets/images/teman3.png";

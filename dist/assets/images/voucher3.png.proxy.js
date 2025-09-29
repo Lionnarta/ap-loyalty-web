@@ -1,0 +1,1 @@
+export default "/dist/assets/images/voucher3.png";

@@ -1,0 +1,1 @@
+export default "/dist/assets/images/copy-2.png";
